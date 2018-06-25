@@ -6,4 +6,6 @@ To run the program:
 Make all the hardware connections and then
 Download the file in Documents
 cd Documents/LOG
+mkdir accel
+mkdir images
 sudo python gpsdData.py
