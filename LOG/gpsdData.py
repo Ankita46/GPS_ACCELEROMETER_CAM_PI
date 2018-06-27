@@ -49,9 +49,9 @@ def writeLog(string,f):
       
       flag = 0  
       localtime = time.asctime(time.localtime(time.time()))
-      print 'latitude    ' , gpsd.fix.latitude
-      print 'longitude   ' , gpsd.fix.longitude
-      print 'Time        ' , localtime
+      print('latitude    ' , gpsd.fix.latitude)
+      print('longitude   ' , gpsd.fix.longitude)
+      print('Time        ' , localtime)
       string1 = '/home/pi/Documents/LOG/images/img%s.jpg'%(localtime)
       camera=PiCamera()
       camera.capture(string1)
@@ -77,7 +77,6 @@ def writeLog(string,f):
                                        flag=1
                                    else:
                                        a=x.splitlines()
-                                       print a
                                        z=a[0]
                                        u=open(z,"r+")
                                        v=u.readlines()
@@ -132,7 +131,7 @@ count=0
 #prog will run for 5 minutes because range of y is 10
 for y in range(10):
     count=count+1
-    print count
+    print(count)
     local = time.asctime(time.localtime(time.time()))
     string = '/home/pi/Documents/LOG/accel/acc%s.txt'%local
     acc='/accel/acc%s'%local
