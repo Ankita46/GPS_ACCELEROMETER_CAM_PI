@@ -108,7 +108,8 @@ IMU.initIMU()
 gpsd = None
 
 f=open("/home/pi/Documents/LOG/LOG.txt","a+")
-firebase=firebase.FirebaseApplication('https://logs-f2658.firebaseio.com/', None)
+#Your database name in firebase
+firebase=firebase.FirebaseApplication('https://<YOUR_DATABASE_NAME>.firebaseio.com/', None)
 
 os.system('clear')
  
@@ -128,8 +129,7 @@ if __name__ == '__main__':
   gpsp = GpsPoller() 
   gpsp.start()
 count=0
-#prog will run for 5 minutes because range of y is 10
-for y in range(10):
+while True:
     count=count+1
     print(count)
     local = time.asctime(time.localtime(time.time()))
