@@ -1,4 +1,4 @@
-									WE SHOWED UP!!!!!!
+						   WE SHOWED UP!!!!!!
 									
 Step 1: Installation of Raspbian on 16 GB (preferred) SD card:
 			Download and Extract Raspbian Stretch for desktop zip from( https://www.raspberrypi.org/downloads/raspbian/ )
@@ -72,5 +72,5 @@ Step 7: Open GPS_ACCELEROMETER_CAM_PI from File Manager. Cut The LOG folder and 
 
 Step 8: To run the program:
 			Terminal -> $ cd Documents/LOG 
-			$ sudo python gpsdData.python
+			$ sudo python gpsdData.py
 			
