@@ -75,6 +75,8 @@ Step 8: To run the program:
 			$ sudo python gpsdData.py
 			
 Step 9: To run the program during reboot:
+			Create a folder under pi and name it "logs"
+			Inside the logs folder create a file name "cronlog"
 			$ sudo crontab -e
 			Go to last line and write
 				@reboot sh /home/pi/Documents/LOG/myProg.sh >/home/pi/logs/cronlog 2>&1
