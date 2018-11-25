@@ -21,10 +21,11 @@ try:
     import struct
 except ImportError:
     import ustruct as struct
-    
+
+#in case no connections are there 
 pi=pigpio.pi()
 if not pi.connected:
-    exit(0)
+    exit(0) 
     
 pi.set_mode(rx,pigpio.INPUT)
 pi.bb_serial_read_open(rx,9600,8)
